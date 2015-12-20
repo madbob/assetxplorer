@@ -1,0 +1,11 @@
+[Unit]
+# Optional
+Description=org.madbob.Assetxplorer
+# Optional (obviously)
+Documentation=atx.madbob.org
+
+[BusName]
+# Optional
+Name=org.madbob.Assetxplorer
+# Optional
+Service=org.madbob.Assetxplorer.service

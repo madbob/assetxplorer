@@ -1,0 +1,18 @@
+# Assetxplorer.
+# Copyright (C) 2015 Bob
+# This file is distributed under the same license as the PACKAGE package.
+# Bob <bob@linux.it>, 2015.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: madbob-assetxplorer 0.1\n"
+"Report-Msgid-Bugs-To: bob@linux.it\n"
+"POT-Creation-Date: 2013-02-22 03:56+0100\n"
+"PO-Revision-Date: 2013-02-22 03:58+0100\n"
+"Last-Translator: Giovanni Campagna <scampa.giovanni@gmail.com>\n"
+"Language-Team: Italian <gnome-it@gnome.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"

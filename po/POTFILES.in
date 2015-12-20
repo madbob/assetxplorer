@@ -1,0 +1,8 @@
+[type: gettext/glade]data/app-menu.ui
+[type: gettext/glade]data/main.ui
+data/org.madbob.Assetxplorer.desktop.in
+data/org.madbob.Assetxplorer.appdata.xml.in
+data/org.madbob.Assetxplorer.gschema.xml
+src/main.py
+src/window.py
+
