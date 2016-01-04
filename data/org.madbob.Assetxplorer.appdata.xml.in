@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application>
-  <id type="desktop">org.madbob.Assetxplorer.desktop</id>
-  <licence>CC0</licence>
+<!-- Copyright 2015 Roberto Guido <bob@linux.it> -->
+<component type="desktop">
+  <id>org.madbob.Assetxplorer</id>
+  <name>Assetxplorer</name>
+  <metadata_licence>CC0</metadata_licence>
+  <project_license>GPL-3.0+</project_license>
   <description>
     <_p>
       Fill your description here.
     </_p>
   </description>
   <screenshots>
-    <screenshot type="default" width="1024" height="768">atx.madbob.org/screenshots/large.png</screenshot>
+    <screenshot type="default" width="1024" height="768">http://atx.madbob.org/img/large.png</screenshot>
   </screenshots>
-  <url type="homepage">atx.madbob.org</url>
-  <updatecontact>bob@linux.it</updatecontact>
-</application>
+  <url type="homepage">http://atx.madbob.org/</url>
+  <project_group>GNOME</project_group>
+  <developer_name>Roberto Guido</developer_name>
+  <update_contact>bob@linux.it</update_contact>
+</component>
