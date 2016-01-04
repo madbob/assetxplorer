@@ -69,7 +69,6 @@ def get_settings(schemaId, path=None):
     GioSSS = Gio.SettingsSchemaSource
 
     if pkg.moduledir != pkg.pkgdatadir:
-        # Running from the source tree
         schemaSource = GioSSS.new_from_directory(pkg.pkgdatadir,
                                                  GioSSS.get_default(),
                                                  False)
@@ -90,3 +89,4 @@ def get_settings(schemaId, path=None):
 def load_icon(iconName, size):
     theme = Gtk.IconTheme.get_default()
     return theme.load_icon(iconName, size, Gtk.IconLookupFlags.GENERIC_FALLBACK)
+

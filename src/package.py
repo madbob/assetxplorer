@@ -21,6 +21,8 @@
 # This module provides a set of convenience APIs for building packaged
 # applications.
 
+import gi
+gi.require_version('GIRepository', '2.0')
 from gi.repository import GLib, GIRepository, Gio
 import sys
 import gettext

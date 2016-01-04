@@ -1,4 +1,4 @@
-nodist_bin_SCRIPTS = madbob-assetxplorer
+nodist_bin_SCRIPTS = assetxplorer
 nodist_pkgdata_SCRIPTS = org.madbob.Assetxplorer
 
 pydir = $(pkgdatadir)
@@ -8,7 +8,7 @@ dist_py_PYTHON = \
 	util.py		\
 	window.py
 
-madbob-assetxplorer: madbob-assetxplorer.in
+assetxplorer: assetxplorer.in
 	$(AM_V_GEN) sed \
 		-e "s|[@]PYTHON@|$(PYTHON)|g" \
 		-e "s|[@]PACKAGE_VERSION@|$(PACKAGE_VERSION)|g" \
@@ -28,7 +28,7 @@ org.madbob.Assetxplorer: org.madbob.Assetxplorer.in
 		$< > $@
 	@chmod +x $@
 
-EXTRA_DIST = org.madbob.Assetxplorer.in madbob-assetxplorer.in
-CLEANFILES = org.madbob.Assetxplorer madbob-assetxplorer
+EXTRA_DIST = org.madbob.Assetxplorer.in assetxplorer.in
+CLEANFILES = org.madbob.Assetxplorer assetxplorer
 
 -include $(top_srcdir)/git.mk

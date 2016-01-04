@@ -1,10 +1,10 @@
 <schemalist gettext-domain="org.madbob.Assetxplorer">
   <schema id="org.madbob.Assetxplorer" path="/org/madbob/Assetxplorer/">
-    <key name="dummy" type="b">
-      <default>true</default>
-      <summary>Dummy key</summary>
+    <key name="folders" type="as">
+      <default><![CDATA[[]]]></default>
+      <summary>Folders</summary>
       <description>
-	Dummy description
+	List of folders previously opened.
       </description>
     </key>
   </schema>

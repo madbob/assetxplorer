@@ -1,7 +1,7 @@
 AC_PREREQ(2.63)
 AC_INIT([org.madbob.Assetxplorer], [0.1],
         [bob@linux.it],
-        [madbob-assetxplorer],
+        [assetxplorer],
         [atx.madbob.org])
 
 AC_CONFIG_HEADERS([config.h])

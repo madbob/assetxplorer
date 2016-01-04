@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <!-- interface-requires gtk+ 3.6 -->
+  <object class="GtkBox" id="container">
+    <property name="visible">True</property>
+    <property name="orientation">vertical</property>
+    <property name="halign">fill</property>
+    <property name="valign">fill</property>
+
+    <child>
+      <object class="GtkScrolledWindow" id="scrollable">
+        <property name="hscrollbar-policy">automatic</property>
+        <property name="vscrollbar-policy">automatic</property>
+
+        <child>
+          <object class="GtkFlowBox" id="grid">
+            <property name="visible">True</property>
+            <property name="max-children-per-line">20</property>
+          </object>
+        </child>
+      </object>
+
+      <packing>
+        <property name="expand">True</property>
+        <property name="fill">True</property>
+        <property name="position">0</property>
+      </packing>
+    </child>
+
+    <child>
+      <object class="GtkBox" id="new-button">
+        <property name="visible">True</property>
+        <property name="orientation">horizontal</property>
+
+        <child>
+          <object class="GtkEntry" id="info-file-name">
+            <property name="visible">True</property>
+            <property name="halign">fill</property>
+            <property name="editable">False</property>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="info-file-metadata">
+            <property name="visible">True</property>
+            <property name="justify">right</property>
+            <property name="halign">end</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="fill">False</property>
+        <property name="position">1</property>
+      </packing>
+    </child>
+  </object>
+</interface>

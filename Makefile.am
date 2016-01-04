@@ -19,12 +19,12 @@ MAINTAINERCLEANFILES = \
 
 GITIGNOREFILES = .anjuta .anjuta_sym_db.db m4/ rpms/
 
-distdir = madbob-assetxplorer-$(VERSION)
+distdir = assetxplorer-$(VERSION)
 
 rpmdefines = \
 	--define "_name org.madbob.Assetxplorer" \
 	--define "_version $(PACKAGE_VERSION)" \
-	--define "_distdir madbob-assetxplorer" \
+	--define "_distdir assetxplorer" \
 	--define "_sourcedir $(abs_builddir)" \
 	--define "_specdir $(abs_srcdir)" \
 	--define "_builddir $(abs_builddir)/rpms" \

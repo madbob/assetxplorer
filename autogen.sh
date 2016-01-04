@@ -5,11 +5,11 @@ srcdir=`dirname $0`
 test -z "$srcdir" && srcdir=.
 
 ACLOCAL_FLAGS="${ACLOCAL_FLAGS}"
-PKG_NAME="madbob-assetxplorer"
+PKG_NAME="assetxplorer"
 
 test -f $srcdir/configure.ac || {
     echo -n "**Error**: Directory "\`$srcdir\'" does not look like the"
-    echo " top-level madbob-assetxplorer directory"
+    echo " top-level assetxplorer directory"
     exit 1
 }
 

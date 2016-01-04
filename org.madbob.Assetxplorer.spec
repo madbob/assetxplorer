@@ -3,7 +3,7 @@ Version:	%{_version}
 Release:	1%{?dist}
 Summary:	Assetxplorer
 
-License:	GPLv2+ and BSD
+License:	GPLv3+
 URL:		atx.madbob.org
 Source0:        %{_distdir}-%{version}.tar.xz
 BuildArch:      noarch

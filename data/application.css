@@ -1,4 +1,11 @@
-.big-label {
-    font-size: 4em;
-    font-weight: bold;
+.assetxplorer-folders {
+    background-color: shade(@theme_bg_color, 0.99)
+}
+
+.assetxplorer-folder {
+    padding: 10px;
+}
+
+.grid .image-button {
+    padding: 5px;
 }

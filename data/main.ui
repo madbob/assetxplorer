@@ -6,13 +6,120 @@
     <property name="visible">True</property>
     <property name="show-close-button">True</property>
     <property name="title" translatable="yes">Assetxplorer</property>
+
+    <child>
+      <object class="GtkButton" id="back-button">
+        <property name="visible">False</property>
+        <property name="can_focus">False</property>
+        <property name="valign">center</property>
+        <property name="sensitive">True</property>
+        <property name="tooltip_text" translatable="yes">Back</property>
+        <style>
+          <class name="image-button"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="back-button-image">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="icon-name">go-previous-symbolic</property>
+            <property name="icon-size">1</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="pack_type">start</property>
+      </packing>
+    </child>
+
+    <child>
+      <object class="GtkButton" id="new-button">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="valign">center</property>
+        <property name="sensitive">True</property>
+        <property name="tooltip_text" translatable="yes">New</property>
+        <style>
+          <class name="image-button"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="new-button-image">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="icon-name">edit-find-symbolic</property>
+            <property name="icon-size">1</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="pack_type">end</property>
+      </packing>
+    </child>
   </object>
-  <object class="GtkGrid" id="main-grid">
+
+  <object class="GtkStack" id="main-stack">
     <property name="can_focus">False</property>
     <property name="visible">True</property>
-    <property name="orientation">vertical</property>
+
     <child>
-      <placeholder/>
+      <object class="GtkBox" id="empty">
+        <property name="orientation">vertical</property>
+        <property name="halign">center</property>
+        <property name="valign">center</property>
+        <child>
+          <object class="GtkLabel" id="label">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Empty History!</property>
+            <property name="xalign">0</property>
+            <property name="margin-bottom">12</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="scale" value="2"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="empty-state-label">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Click the icon above to add a folder.</property>
+            <property name="justify">center</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="position">0</property>
+      </packing>
+    </child>
+
+    <child>
+      <object class="GtkListBox" id="list">
+      </object>
+      <packing>
+        <property name="position">1</property>
+      </packing>
+    </child>
+
+    <child>
+      <object class="GtkBox" id="contents">
+        <property name="orientation">vertical</property>
+        <property name="visible">True</property>
+        <property name="valign">fill</property>
+        <property name="halign">fill</property>
+      </object>
+      <packing>
+        <property name="position">2</property>
+      </packing>
     </child>
   </object>
 </interface>
